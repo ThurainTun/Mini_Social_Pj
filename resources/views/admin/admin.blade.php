@@ -1,0 +1,2 @@
+<x-adminlayout>
+</x-adminlayout> 
