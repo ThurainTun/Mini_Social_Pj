@@ -35,7 +35,7 @@ Route::middleware('auth')->group(function () {
     });
 
     // home routes
-    Route::controller(HomeContoller::class)->group(function () {
+    Route::controller(HomeController::class)->group(function () {
         Route::get('/', 'index')->name('index')->middleware('auth');
         Route::get('/user/create-post', 'create_post')->name('create-post');
         Route::post('/user/create-post', 'create_post_data')->name('create-post-data');
